@@ -13,12 +13,12 @@ AC_PROG_CC
 AC_PROG_INSTALL
 
 # Checks for libraries.
-AC_CHECK_LIB(resolv, res_query, [],
-    [AC_CHECK_LIB(resolv, __res_query, [],
-        [AC_MSG_ERROR([libresolv not found.])])])
+#AC_CHECK_LIB(resolv, res_query, [],
+    #[AC_CHECK_LIB(resolv, __res_query, [],
+        #[AC_MSG_ERROR([libresolv not found.])])])
 
 # Checks for header files.
-AC_HEADER_RESOLV
+#AC_HEADER_RESOLV
 AC_CHECK_HEADERS([arpa/inet.h fcntl.h netdb.h stdlib.h string.h sys/socket.h unistd.h])
 
 # Checks for typedefs, structures, and compiler characteristics.
